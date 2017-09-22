@@ -3,6 +3,8 @@
 //class used for storing/setting all the transforms/waypoints in array allowing them to be called in the enemy script.
 public class Waypoints : MonoBehaviour {
 
+    // make a duplicate of everything in here and make ai nt so they have to cohose between 2 ways
+
     public static Transform[] points; // Static variable holding all Waypoitns
 
     void Awake() // Find all waypoints and load into point array
