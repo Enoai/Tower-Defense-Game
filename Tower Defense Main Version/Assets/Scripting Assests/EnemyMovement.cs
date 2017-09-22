@@ -10,6 +10,9 @@ public class EnemyMovement : MonoBehaviour {
 
     private Enemy enemy; // creates a private link to the enemy class.
 
+    // Make tags for all enemies and predeicde where it goes inside of next waypoint i.e Flying goes down 9-15
+    // make on trigger enter on end path so you don't have to use wavepointindex over limit
+
     void Start()
     {
         enemy = GetComponent<Enemy>();
