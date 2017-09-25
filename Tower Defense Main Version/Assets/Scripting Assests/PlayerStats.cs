@@ -24,11 +24,6 @@ public class PlayerStats : MonoBehaviour {
         Rounds = 0;
     }
 
-    void Update()
-    {
-        Debug.Log(moneyGenerationAmount);
-    }
-
     void Awake()
     {
         StartCoroutine(moneyBuffer());
