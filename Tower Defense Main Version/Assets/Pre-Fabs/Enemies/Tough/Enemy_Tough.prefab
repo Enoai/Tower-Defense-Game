@@ -25,8 +25,8 @@ GameObject:
   - component: {fileID: 114097258705699852}
   - component: {fileID: 114076340045894878}
   m_Layer: 0
-  m_Name: Enemy_Tought
-  m_TagString: Enemy
+  m_Name: Enemy_Tough
+  m_TagString: EnemyGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

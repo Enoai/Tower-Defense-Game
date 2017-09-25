@@ -37,7 +37,7 @@ public class Turret : MonoBehaviour {
     public Light impactLight;
 
     [Header("Unity SetUp Fields")]
-    public string enemyTag = "Enemy";
+    public string enemyTag = "EnemyGround";
     public float turnSpeed = 10f; // turret turn speed
     public Transform partToRotate; // object that rotates
     public Transform firePoint;//location as to where the bullet insitates from

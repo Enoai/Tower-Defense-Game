@@ -4,9 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemy
-  - FlyingWaypoint
   - MoneyTurret
+  - GroundWaypoint
+  - FlyingWaypoint
+  - EnemyGround
+  - EnemyFlying
   layers:
   - Default
   - TransparentFX

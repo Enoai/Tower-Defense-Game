@@ -1,20 +1,37 @@
-﻿using UnityEngine;
+﻿ using UnityEngine;
+ using System.Collections;
+ using System.Collections.Generic;
 
 //class used for storing/setting all the transforms/waypoints in array allowing them to be called in the enemy script.
 public class Waypoints : MonoBehaviour {
 
     // make a duplicate of everything in here and make ai nt so they have to cohose between 2 ways
 
-    public static Transform[] points; // Static variable holding all Waypoitns
+    public Transform[] wayPointsGround;
+    public Transform[] wayPointsAir;
+
+    public int wayPointAirNumber = 0;
+    public int wayPointsGroundNumber = 0;
 
     void Awake() // Find all waypoints and load into point array
     {
-        points = new Transform[transform.childCount]; // creates ("X") amounts of spaces in the points array (bases on how many waypoints)
+        wayPointsGround = new Transform[transform.childCount];
+        wayPointsAir = new Transform[transform.childCount];
 
-        for (int i = 0; i < points.Length; i++) // Goes through them all!
+        for (int i = 0; i < transform.childCount; i++)
         {
-            points[i] = transform.GetChild(i); // saves their location
+            Transform child = transform.GetChild(i);
+
+            if (child.tag == "GroundWaypoint")
+            {
+                wayPointsGround[wayPointsGroundNumber] = transform.GetChild(i);
+                wayPointsGroundNumber++;
+            }
+            if (child.tag == "FlyingWaypoint")
+            {
+                wayPointsAir[wayPointAirNumber] = transform.GetChild(i);
+                wayPointAirNumber++;
+            }
         }
     }
-
 }

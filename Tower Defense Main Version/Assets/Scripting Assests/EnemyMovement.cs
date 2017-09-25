@@ -10,13 +10,22 @@ public class EnemyMovement : MonoBehaviour {
 
     private Enemy enemy; // creates a private link to the enemy class.
 
-    // Make tags for all enemies and predeicde where it goes inside of next waypoint i.e Flying goes down 9-15
-    // make on trigger enter on end path so you don't have to use wavepointindex over limit
+    public Waypoints waypoints;
 
+    
     void Start()
     {
+        waypoints = FindObjectOfType<Waypoints>(); // instantlly assigns waypoints to all prefabs.
         enemy = GetComponent<Enemy>();
-        target = Waypoints.points[0]; // set the first target to be the first waypoint
+
+        if (enemy.tag == "EnemyGround")
+        {
+            target = waypoints.wayPointsGround[0];
+        }
+        else
+        {
+            target = waypoints.wayPointsAir[0];
+        }
     }
 
     void Update()
@@ -35,14 +44,35 @@ public class EnemyMovement : MonoBehaviour {
 
     void GetNextWaypoint() // fiugres out the next wayoupoint to go to and sets it.
     {
-        if (wavePointIndex >= Waypoints.points.Length - 1) // kill enemy reaching end
+
+        if (enemy.tag == "EnemyGround")
         {
-            EndPath();
-            return; // stops the code going down to next area before running this code.
+            if (wavePointIndex >= waypoints.wayPointsGround.Length - 1) // kill enemy reaching end
+            {
+                EndPath();
+                return; // stops the code going down to next area before running this code.
+            }
+        }
+        else
+        {
+            if (wavePointIndex >= waypoints.wayPointsAir.Length - 1) // kill enemy reaching end
+            {
+                EndPath();
+                return; // stops the code going down to next area before running this code.
+            }
         }
 
         wavePointIndex++; // move array value up by one
-        target = Waypoints.points[wavePointIndex]; // sets the new target
+
+        if (enemy.tag == "EnemyGround")
+        {
+            target = waypoints.wayPointsGround[wavePointIndex]; // sets the new target
+        }
+        else
+        {
+            target = waypoints.wayPointsAir[wavePointIndex]; // sets the new target
+        }
+
     }
 
     void EndPath()

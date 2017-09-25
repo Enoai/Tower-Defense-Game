@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114076340045894878}
   m_Layer: 0
   m_Name: Enemy_Simple
-  m_TagString: Enemy
+  m_TagString: EnemyGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,6 +147,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53fa358d8d458dd4396a1239c3d5c410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  wavePointIndex: 0
+  enemy: {fileID: 0}
+  waypoints: {fileID: 0}
 --- !u!114 &114097258705699852
 MonoBehaviour:
   m_ObjectHideFlags: 1
