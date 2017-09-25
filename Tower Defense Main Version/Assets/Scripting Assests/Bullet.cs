@@ -63,7 +63,7 @@ public class Bullet : MonoBehaviour {
 
         foreach (Collider collider in colliders) // loop through all that list and each enemy hit with enemy tag, deal damage.
         {
-            if (collider.tag == "EnemyFlying")
+            if (collider.tag == "EnemyFlying") // if enemy has the tag enemyflying allow it to be damage.
             {
                 Damage(collider.transform);// damage the enemy
                 
