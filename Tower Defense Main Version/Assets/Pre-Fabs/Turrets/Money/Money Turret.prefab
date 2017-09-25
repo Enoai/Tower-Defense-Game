@@ -335,7 +335,7 @@ MonoBehaviour:
   lineRenderer: {fileID: 0}
   impactEffect: {fileID: 0}
   impactLight: {fileID: 0}
-  enemyTag: Enemy
+  enemyTag: EnemyGround
   turnSpeed: 10
   partToRotate: {fileID: 4583059730630870}
   firePoint: {fileID: 4862671284331110}

@@ -452,15 +452,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 20
+  useBullets: 0
   bulletPrefab: {fileID: 0}
   fireRate: 1
+  useMoney: 0
+  moneyGeneration: 0
   useLaser: 1
   damageOverTime: 30
   slowAmount: 0.5
   lineRenderer: {fileID: 120384541470399372}
   impactEffect: {fileID: 198130776621284330}
   impactLight: {fileID: 108626628259446262}
-  enemyTag: Enemy
+  enemyTag: EnemyGround
   turnSpeed: 10
   partToRotate: {fileID: 4017457120320920}
   firePoint: {fileID: 4080796673020454}
