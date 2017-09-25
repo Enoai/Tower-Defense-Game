@@ -10,8 +10,8 @@ public class Waypoints : MonoBehaviour {
     public Transform[] wayPointsGround;
     public Transform[] wayPointsAir;
 
-    public int wayPointAirNumber = 0;
-    public int wayPointsGroundNumber = 0;
+    private int wayPointAirNumber = 0;
+    private int wayPointsGroundNumber = 0;
 
     void Awake() // Find all waypoints and load into point array
     {

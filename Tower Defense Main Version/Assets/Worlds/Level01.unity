@@ -1742,7 +1742,7 @@ Prefab:
     - target: {fileID: 224561943330146372, guid: d1665c1f39badcd45a21d14bdc99ec2e,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -77.90068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224561943330146372, guid: d1665c1f39badcd45a21d14bdc99ec2e,
         type: 2}
@@ -10004,7 +10004,7 @@ Prefab:
     - target: {fileID: 224561943330146372, guid: d1665c1f39badcd45a21d14bdc99ec2e,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -77.90068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224561943330146372, guid: d1665c1f39badcd45a21d14bdc99ec2e,
         type: 2}
@@ -10794,7 +10794,7 @@ Prefab:
     - target: {fileID: 224561943330146372, guid: d1665c1f39badcd45a21d14bdc99ec2e,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -77.90068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224561943330146372, guid: d1665c1f39badcd45a21d14bdc99ec2e,
         type: 2}
@@ -14167,8 +14167,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wayPointsGround: []
   wayPointsAir: []
-  wayPointAirNumber: 0
-  wayPointsGroundNumber: 0
 --- !u!1 &1537856410
 GameObject:
   m_ObjectHideFlags: 0
@@ -17622,7 +17620,7 @@ Prefab:
     - target: {fileID: 224561943330146372, guid: d1665c1f39badcd45a21d14bdc99ec2e,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -77.90068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224561943330146372, guid: d1665c1f39badcd45a21d14bdc99ec2e,
         type: 2}
