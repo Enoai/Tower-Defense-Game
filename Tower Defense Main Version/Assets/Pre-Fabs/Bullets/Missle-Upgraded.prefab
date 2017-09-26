@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4608842157244046}
   - component: {fileID: 114047079163082614}
   m_Layer: 0
-  m_Name: Missle
+  m_Name: Missle-Upgraded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
-  explosionRadius: 0
-  impactEffect: {fileID: 1946751266948366, guid: f753528fdcf6ba941b6eb352905562ae,
+  explosionRadius: 8
+  impactEffect: {fileID: 1946751266948366, guid: a6d3b6bc9bd00a64488a9c66709ec344,
     type: 2}
-  damage: 25
+  damage: 50

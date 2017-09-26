@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 198390086096117166}
   - component: {fileID: 199402969316891926}
   m_Layer: 0
-  m_Name: MissleExplosionEffect
+  m_Name: MissleExplosionEffect_Single
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -213,7 +213,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1647516223
+  randomSeed: -627254916
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -261,8 +261,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 15
-      minScalar: 5
+      scalar: 10
+      minScalar: 2.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -366,7 +366,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 0.5
-      minScalar: 0.25
+      minScalar: 0.1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -852,8 +852,8 @@ ParticleSystem:
     m_BurstCount: 1
     m_Bursts:
     - time: 0
-      minCount: 30
-      maxCount: 30
+      minCount: 15
+      maxCount: 15
       cycleCount: 1
       repeatInterval: 0.01
   SizeModule:
@@ -3272,7 +3272,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -371547423
+  randomSeed: 1101755357
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3320,8 +3320,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 25
-      minScalar: 15
+      scalar: 10
+      minScalar: 5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3424,8 +3424,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.5
-      minScalar: 0.25
+      scalar: 0.25
+      minScalar: 0.1
       maxCurve:
         serializedVersion: 2
         m_Curve:
