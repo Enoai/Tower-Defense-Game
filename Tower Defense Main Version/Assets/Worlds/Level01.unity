@@ -4608,7 +4608,7 @@ GameObject:
   - component: {fileID: 516137537}
   m_Layer: 0
   m_Name: START
-  m_TagString: Untagged
+  m_TagString: SpawnPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14392,6 +14392,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wayPointsGround: []
   wayPointsAir: []
+  spawnPoints: []
+  currentSpawnPoint: {fileID: 0}
+  spawnPointIndex: 0
 --- !u!1 &1537856410
 GameObject:
   m_ObjectHideFlags: 0

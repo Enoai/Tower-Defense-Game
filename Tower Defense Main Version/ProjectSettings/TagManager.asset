@@ -9,6 +9,7 @@ TagManager:
   - FlyingWaypoint
   - EnemyGround
   - EnemyFlying
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX
