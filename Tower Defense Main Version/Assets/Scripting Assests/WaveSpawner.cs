@@ -120,8 +120,6 @@ public class WaveSpawner : MonoBehaviour { // Script used to spawn monsters in w
         else
         {
             Instantiate(enemy, spawnPoints.currentSpawnPointGround.position, spawnPoints.currentSpawnPointGround.rotation); // spawn in this specfic prefab at the spawnpoint location and rotation
-        }
-        
-        
+        }      
     }
 }
