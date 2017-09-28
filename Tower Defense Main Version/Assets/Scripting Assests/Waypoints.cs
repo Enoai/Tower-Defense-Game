@@ -10,10 +10,6 @@ public class Waypoints : MonoBehaviour {
     public Transform[] wayPointsGround;
     public Transform[] wayPointsAir;
 
-    public GameObject[] spawnPoints; // contains all the current spawnPoints on the map
-    public GameObject currentSpawnPoint; // contains the currently selected spawnpoint
-    public int spawnPointIndex;// contains the number
-
     private int wayPointAirNumber = 0;
     private int wayPointsGroundNumber = 0;
 
@@ -22,11 +18,6 @@ public class Waypoints : MonoBehaviour {
 
     void Awake() // Find all waypoints and load into point array
     {
-        // chooses randomly a spawn point from the list
-        spawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint"); // Gathers all spawnpoitns on the map with the tag of this
-        spawnPointIndex = Random.Range(0, spawnPoints.Length);
-        currentSpawnPoint = spawnPoints[spawnPointIndex];
-        print(currentSpawnPoint.name);
 
         // For loop used to count up how many children are in the gameobject then figure out the amount of air or ground waypoints and create the correct number
         for (int i = 0; i < transform.childCount; i++)

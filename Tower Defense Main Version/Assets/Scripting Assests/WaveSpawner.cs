@@ -11,14 +11,13 @@ public class WaveSpawner : MonoBehaviour { // Script used to spawn monsters in w
 
     public Wave[] waves;
 
-    public Transform spawnPoint; // refernce for the spawn location
-
     public float timeBetweenWaves = 5f; //variable used to space spawn between monsters
     private float countdown = 2f; // timer between spawning first wave
 
     public Text waveCountdownText;
 
     public GameManager gameManger;
+    public spawnPoints spawnPoints;
 
     private int waveIndex = 0; // amount of npcs spawnt per wave
 
@@ -76,29 +75,35 @@ public class WaveSpawner : MonoBehaviour { // Script used to spawn monsters in w
             SpawnEnemy(wave.enemy1);
             yield return new WaitForSeconds(1f / wave.rate1); // wait for half a second
         }
+        spawnPoints.switchSpawnPoint(); // After everywave change the spawnpoint to make the game more random
+
         for (int i = 0; i < wave.count2; i++)
         {
             SpawnEnemy(wave.enemy2);
             yield return new WaitForSeconds(1f / wave.rate2); // wait for half a second
         }
+        spawnPoints.switchSpawnPoint(); // After everywave change the spawnpoint to make the game more random
 
         for (int i = 0; i < wave.count3; i++)
         {
             SpawnEnemy(wave.enemy3);
             yield return new WaitForSeconds(1f / wave.rate3); // wait for half a second
         }
+        spawnPoints.switchSpawnPoint(); // After everywave change the spawnpoint to make the game more random
 
         for (int i = 0; i < wave.count4; i++)
         {
             SpawnEnemy(wave.enemy4);
             yield return new WaitForSeconds(1f / wave.rate4); // wait for half a second
         }
+        spawnPoints.switchSpawnPoint(); // After everywave change the spawnpoint to make the game more random
 
         for (int i = 0; i < wave.count5; i++)
         {
             SpawnEnemy(wave.enemy5);
             yield return new WaitForSeconds(1f / wave.rate5); // wait for half a second
         }
+        spawnPoints.switchSpawnPoint(); // After everywave change the spawnpoint to make the game more random
 
         waveIndex++; // Increase the waveIndex
 
@@ -107,6 +112,16 @@ public class WaveSpawner : MonoBehaviour { // Script used to spawn monsters in w
 
     void SpawnEnemy(GameObject enemy) // spawn the enmies
     {
-        Instantiate(enemy, spawnPoint.position, spawnPoint.rotation); // spawn in this specfic prefab at the spawnpoint location and rotation
+        // checks the tags and sets a random spawn point based on what type of enemy they are
+        if (enemy.tag == "EnemyFlying")
+        {
+            Instantiate(enemy, spawnPoints.currentSpawnPointFlying.position, spawnPoints.currentSpawnPointFlying.rotation); // spawn in this specfic prefab at the spawnpoint location and rotation
+        }
+        else
+        {
+            Instantiate(enemy, spawnPoints.currentSpawnPointGround.position, spawnPoints.currentSpawnPointGround.rotation); // spawn in this specfic prefab at the spawnpoint location and rotation
+        }
+        
+        
     }
 }
