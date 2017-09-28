@@ -5,7 +5,7 @@
 //class used for storing/setting all the transforms/waypoints in array allowing them to be called in the enemy script.
 public class Waypoints : MonoBehaviour {
 
-    // make a duplicate of everything in here and make ai nt so they have to cohose between 2 ways
+    //If you want more than 2 pathways you can repeat everything in here again and make unlimted routes.
 
     public Transform[] wayPointsGround;
     public Transform[] wayPointsAir;
@@ -18,7 +18,6 @@ public class Waypoints : MonoBehaviour {
 
     void Awake() // Find all waypoints and load into point array
     {
-
         // For loop used to count up how many children are in the gameobject then figure out the amount of air or ground waypoints and create the correct number
         for (int i = 0; i < transform.childCount; i++)
         {

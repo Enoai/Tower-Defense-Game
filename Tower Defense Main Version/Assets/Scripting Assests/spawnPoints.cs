@@ -9,16 +9,16 @@ public class spawnPoints : MonoBehaviour
     [Header("Flying SpawnPoint Information")]
     public Transform[] spawnLocationsFlying; // contains all the current spawnPoints on the map
     public static Transform currentSpawnPointFlying; // contains the currently selected spawnpoint
-    public int spawnPointIndexFlying;// contains the number
-    public int spawnPointNumberFlying = 0;
-    public int spawnPointCounterFlying = 0;
+    private int spawnPointIndexFlying;// contains the number
+    private int spawnPointNumberFlying = 0;
+    private int spawnPointCounterFlying = 0;
 
     [Header("Ground SpawnPoint Information")]
     public Transform[] spawnLocationsGround; // contains all the current spawnPoints on the map
     public static Transform currentSpawnPointGround; // contains the currently selected spawnpoint
-    public int spawnPointIndexGround;// contains the number
-    public int spawnPointNumberGround = 0;
-    public int spawnPointCounterGround = 0;
+    private int spawnPointIndexGround;// contains the number
+    private int spawnPointNumberGround = 0;
+    private int spawnPointCounterGround = 0;
 
 
     void Awake() //Finds all the spawns points the spawnpoint holder, once found counts how many of each.
