@@ -60,6 +60,7 @@ public class spawnPoints : MonoBehaviour
         switchSpawnPoint();
     }
 
+    // changed all the floor and air current spawnpoints to something else
     public void switchSpawnPoint()
     {
         spawnPointIndexGround = Random.Range(0, spawnLocationsGround.Length);
@@ -70,4 +71,4 @@ public class spawnPoints : MonoBehaviour
         currentSpawnPointFlying = spawnLocationsFlying[spawnPointIndexFlying];
         print(currentSpawnPointFlying.name);
     }
-}
+} 

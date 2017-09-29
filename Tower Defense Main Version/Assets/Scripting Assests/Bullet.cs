@@ -71,7 +71,7 @@ public class Bullet : MonoBehaviour {
         }
     }
 
-    void Damage (Transform enemy)
+     void Damage (Transform enemy)
     {
         Enemy e = enemy.GetComponent<Enemy>();
 
@@ -79,7 +79,6 @@ public class Bullet : MonoBehaviour {
         {
             e.TakeDamage(damage);
         }
-
     }
 
     void OnDrawGizmosSelected() // draws a circle to show explosion radius of missle.

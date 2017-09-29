@@ -26,6 +26,12 @@ public class Turret : MonoBehaviour {
 
     public int moneyGeneration;
 
+    [Header("Use selfAOE")]
+    public bool useAoeTurret = false; // used to check if the aoe turret is enabled
+    public float aoeSelfDamage; // the damage this turret will do every few seconds
+    public float aoeFireRate = 1f; // 1 shot per second
+    private float aoeFireCountdown = 0f; // simple countdown per shot
+
     [Header("Use Laser")]
     public bool useLaser = false; // checker to see if to use laser.
 
@@ -106,18 +112,27 @@ public class Turret : MonoBehaviour {
 
         LockOnTarget(); // if the target is not empty lock onto the nearest turret.
 
+        
+
         if (useLaser) // if laser is on, shoot laser.
         {
             Laser();
 
         }
+        if (aoeFireCountdown <= 0f && useAoeTurret) // if countdown is done and this turret is enablbed allow it to do this
+        {
+            selfAoe(); // shoot the turret
+            aoeFireCountdown = 1f / aoeFireRate; // reset the shooting cooldown
+        }
 
-        if (fireCountdown <= 0f && useBullets == true) // if ready to shoot, shoot.
+        if (fireCountdown <= 0f && useBullets) // if ready to shoot, shoot.
         {
            Shoot();
            fireCountdown = 1f / fireRate;
-         }
-           fireCountdown -= Time.deltaTime;
+        }
+
+        fireCountdown -= Time.deltaTime;
+        aoeFireCountdown -= Time.deltaTime;
     }
 
     void LockOnTarget()
@@ -152,6 +167,21 @@ public class Turret : MonoBehaviour {
         impactEffect.transform.rotation = Quaternion.LookRotation(dir); // makes the impact effect rotate towards the turret location.
 
     }
+    // method used for the self aoe turret
+    // it collects all targets within the range of the turret
+    // then allows them to be damaged
+    void selfAoe() 
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, range); // collects all colliders hit inside this explosion radius and stores them in the collider array.
+
+        foreach (Collider collider in colliders) // loop through all that list and each enemy hit with enemy tag, deal damage.
+        {
+            if (collider.tag == "EnemyGround") // if enemy has the tag enemyflying allow it to be damage.
+            {
+                Damage(collider.transform);// damage the enemy
+            }
+        }
+    }
 
     void Shoot()
     {
@@ -170,10 +200,21 @@ public class Turret : MonoBehaviour {
             useMoney = false;
     }
 
+    void Damage(Transform enemy)
+    {
+        Enemy e = enemy.GetComponent<Enemy>();
+
+        if (e != null) // if there's a enemy with tag enemy, then deal damage.
+        {
+            e.TakeDamage(aoeSelfDamage);
+        }
+    }
 
     void OnDrawGizmosSelected() // draws the circles (attack range) of turrets
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
     }
+
+    
 }

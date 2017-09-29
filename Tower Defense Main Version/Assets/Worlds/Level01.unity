@@ -4336,13 +4336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnLocationsFlying: []
-  spawnPointIndexFlying: 0
-  spawnPointNumberFlying: 0
-  spawnPointCounterFlying: 0
   spawnLocationsGround: []
-  spawnPointIndexGround: 0
-  spawnPointNumberGround: 0
-  spawnPointCounterGround: 0
 --- !u!4 &493540550
 Transform:
   m_ObjectHideFlags: 0
