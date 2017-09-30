@@ -361,8 +361,8 @@ MonoBehaviour:
   useMoney: 0
   moneyGeneration: 0
   useAoeTurret: 1
-  aoeSelfDamage: 7.5
-  aoeFireRate: 1
+  aoeSelfDamage: 10
+  aoeFireRate: 2
   AOEimpactEffect: {fileID: 198879318745218744}
   useLaser: 0
   damageOverTime: 30
