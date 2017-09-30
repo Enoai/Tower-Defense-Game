@@ -323,6 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 8
+  damage: 0
   useBullets: 0
   bulletPrefab: {fileID: 1004087504083364, guid: 6ab3aa612f2c40348a7ec18272c0789c,
     type: 2}
@@ -339,7 +340,7 @@ MonoBehaviour:
   impactEffect: {fileID: 0}
   impactLight: {fileID: 0}
   enemyTag: EnemyGround
-  turnSpeed: 10
+  turnSpeed: 0
   partToRotate: {fileID: 4583059730630870}
   firePoint: {fileID: 4862671284331110}
   rangeCircle: {fileID: 4209657279363602}

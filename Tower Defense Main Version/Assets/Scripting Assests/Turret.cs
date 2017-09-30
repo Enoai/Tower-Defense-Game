@@ -6,16 +6,19 @@ using UnityEngine;
 // it contains the range/turnspeed/fire rate & cooldown per shot.
 // it also contains the location of the rotation of the turret - the bullet it uses and the fire point.
 // this script also makes the bullets it creates seek enemies and destroy after "X" amount of time.
+// it also contains a damage variable to which is similar how to the bullet works
 public class Turret : MonoBehaviour {
 
-    private Transform target; // used for storing current target
-    private Enemy targetEnemy;
+    private Transform target; // used for storing current target 
+    private Enemy targetEnemy; 
 
+    // This variables are generic overall variables that are used passively
     [Header("General")]
     public float range = 15f; //range of how far turrent can attack.
+    private float damage = 0; //contains the damage this turret will do (this is differnt to the bullet damage)
 
     [Header("Use Bullets(Default)")]
-    public bool useBullets;
+    public bool useBullets; // used for storing if this damage type is being used
 
     public GameObject bulletPrefab; // the bullet this turret uses
     public float fireRate = 1f; // turret shotting speed
@@ -24,10 +27,11 @@ public class Turret : MonoBehaviour {
     [Header("Use Money")]
     public bool useMoney = false;
 
-    public int moneyGeneration;
+    public int moneyGeneration; // contains how much moenm
 
     [Header("Use selfAOE")]
-    public bool useAoeTurret = false; // used to check if the aoe turret is enabled
+    public bool useAoeTurret = false; // used to check if the aoe turret is enabled (Automatically set to false because the USE BULLETS is the default)
+
     public float aoeSelfDamage; // the damage this turret will do every few seconds
     public float aoeFireRate = 1f; // 1 shot per second
     private float aoeFireCountdown = 0f; // simple countdown per shot
@@ -131,8 +135,8 @@ public class Turret : MonoBehaviour {
            fireCountdown = 1f / fireRate;
         }
 
-        fireCountdown -= Time.deltaTime;
-        aoeFireCountdown -= Time.deltaTime;
+        fireCountdown -= Time.deltaTime; // updates the timer in real time
+        aoeFireCountdown -= Time.deltaTime; // updates the timer in real time
     }
 
     void LockOnTarget()
@@ -178,6 +182,7 @@ public class Turret : MonoBehaviour {
         {
             if (collider.tag == "EnemyGround") // if enemy has the tag enemyflying allow it to be damage.
             {
+                damage = aoeSelfDamage;
                 Damage(collider.transform);// damage the enemy
             }
         }
@@ -194,10 +199,10 @@ public class Turret : MonoBehaviour {
         }
     }
 
-    public void Money() // controls the money gaining // change this to just a button and not a tower.
+    public void Money() // controls the money gaining
     {
-            PlayerStats.moneyGenerationAmount += moneyGeneration;
-            useMoney = false;
+            PlayerStats.moneyGenerationAmount += moneyGeneration; // increases the money gain per second by the towers set amount
+            useMoney = false; // disables it after upgraded so it only runs once.
     }
 
     void Damage(Transform enemy)
@@ -206,7 +211,7 @@ public class Turret : MonoBehaviour {
 
         if (e != null) // if there's a enemy with tag enemy, then deal damage.
         {
-            e.TakeDamage(aoeSelfDamage);
+            e.TakeDamage(damage);
         }
     }
 

@@ -9,6 +9,7 @@ public class Shop : MonoBehaviour {
     public TurretBlueprint standardTurret; // calls the turrentblueprint class and sends the variables over.
     public TurretBlueprint missleLauncher;
     public TurretBlueprint laserBeamer;
+    public TurretBlueprint aoeTurret;
     public TurretBlueprint moneyTurret;
 
     BuildManager buildManger;
@@ -33,6 +34,12 @@ public class Shop : MonoBehaviour {
     {
         Debug.Log("Laser Beamer Selected");
         buildManger.SelectTurretToBuild(laserBeamer);
+    }
+
+    public void SelectAoeTurret()
+    {
+        Debug.Log("AOE Turret Selected");
+        buildManger.SelectTurretToBuild(aoeTurret);
     }
 
     public void SelectMoneyTurret()
