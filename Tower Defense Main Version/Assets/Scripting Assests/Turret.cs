@@ -34,6 +34,7 @@ public class Turret : MonoBehaviour {
 
     public float aoeSelfDamage; // the damage this turret will do every few seconds
     public float aoeFireRate = 1f; // 1 shot per second
+    public ParticleSystem AOEimpactEffect;
     private float aoeFireCountdown = 0f; // simple countdown per shot
 
     [Header("Use Laser")]
@@ -101,6 +102,10 @@ public class Turret : MonoBehaviour {
 
         if (target == null) // checks to see if there is a target or not.
         {
+            if (useAoeTurret) // if this turret is enabled and has no target, disable the aoe visual effect
+            {
+                AOEimpactEffect.Stop();
+            }
             // if the target is null(no target) then check to see if the laser is on and if the linerender is on, if so disable it because of no target
             if (useLaser)
             {
@@ -111,6 +116,8 @@ public class Turret : MonoBehaviour {
                     lineRenderer.enabled = false;
                 }
             }
+
+           
             return;
         }
 
@@ -183,6 +190,7 @@ public class Turret : MonoBehaviour {
             if (collider.tag == "EnemyGround") // if enemy has the tag enemyflying allow it to be damage.
             {
                 damage = aoeSelfDamage;
+                AOEimpactEffect.Play();
                 Damage(collider.transform);// damage the enemy
             }
         }

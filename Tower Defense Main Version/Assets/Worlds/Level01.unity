@@ -1768,6 +1768,12 @@ Prefab:
       propertyPath: m_Text
       value: $250
       objectReference: {fileID: 0}
+    - target: {fileID: 114397347572681852, guid: d1665c1f39badcd45a21d14bdc99ec2e,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 23e7137df2329c14781d928884c8d64c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d1665c1f39badcd45a21d14bdc99ec2e, type: 2}
   m_IsPrefabParent: 0
@@ -12087,7 +12093,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 23e7137df2329c14781d928884c8d64c,
+      objectReference: {fileID: 21300000, guid: 186b996c0c0818c44919e0d7bc804385,
         type: 3}
     - target: {fileID: 114421343712620088, guid: d1665c1f39badcd45a21d14bdc99ec2e,
         type: 2}
