@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198938574494529718}
   - component: {fileID: 199925230613522954}
   m_Layer: 0
-  m_Name: EnemyDeathEffect_Tought
+  m_Name: EnemyDeathEffect_Simple3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3114,7 +3114,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: fac99b4c27a7255438494dcef5123907, type: 2}
+  - {fileID: 2100000, guid: d272a0a8d5af34548b97dcfb094e0ef0, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
