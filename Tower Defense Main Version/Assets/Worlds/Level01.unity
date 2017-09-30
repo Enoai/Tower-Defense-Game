@@ -1084,48 +1084,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4016289279193242, guid: 98016d355ed0a82448a83312ac0983b3,
     type: 2}
   m_PrefabInternal: {fileID: 137388294}
---- !u!1001 &139330301
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4910583413178962, guid: af1a755c568718244bab78d971412d55, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -70
-      objectReference: {fileID: 0}
-    - target: {fileID: 4910583413178962, guid: af1a755c568718244bab78d971412d55, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4910583413178962, guid: af1a755c568718244bab78d971412d55, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4910583413178962, guid: af1a755c568718244bab78d971412d55, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4910583413178962, guid: af1a755c568718244bab78d971412d55, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4910583413178962, guid: af1a755c568718244bab78d971412d55, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4910583413178962, guid: af1a755c568718244bab78d971412d55, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4910583413178962, guid: af1a755c568718244bab78d971412d55, type: 2}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: af1a755c568718244bab78d971412d55, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &141316000
 Prefab:
   m_ObjectHideFlags: 0
@@ -7449,23 +7407,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemy1: {fileID: 1335854094805866, guid: 1c670e3c9007e044e9795df610415017, type: 2}
-    count1: 5
+    count1: 3
     rate1: 1
-    enemy2: {fileID: 1335854094805866, guid: 2e246a11777e6984cbfd0b3b75aa3b2c, type: 2}
-    count2: 5
-    rate2: 1
-    enemy3: {fileID: 0}
-    count3: 0
-    rate3: 0
-    enemy4: {fileID: 0}
-    count4: 0
-    rate4: 0
-    enemy5: {fileID: 0}
-    count5: 0
-    rate5: 0
-  - enemy1: {fileID: 1335854094805866, guid: 2e246a11777e6984cbfd0b3b75aa3b2c, type: 2}
-    count1: 10
-    rate1: 5
     enemy2: {fileID: 0}
     count2: 0
     rate2: 0
@@ -7478,9 +7421,9 @@ MonoBehaviour:
     enemy5: {fileID: 0}
     count5: 0
     rate5: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
+  - enemy1: {fileID: 1335854094805866, guid: 1c670e3c9007e044e9795df610415017, type: 2}
+    count1: 6
+    rate1: 1
     enemy2: {fileID: 0}
     count2: 0
     rate2: 0
@@ -7493,9 +7436,9 @@ MonoBehaviour:
     enemy5: {fileID: 0}
     count5: 0
     rate5: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
+  - enemy1: {fileID: 1335854094805866, guid: 1c670e3c9007e044e9795df610415017, type: 2}
+    count1: 9
+    rate1: 1
     enemy2: {fileID: 0}
     count2: 0
     rate2: 0
@@ -7508,9 +7451,24 @@ MonoBehaviour:
     enemy5: {fileID: 0}
     count5: 0
     rate5: 0
-  - enemy1: {fileID: 0}
-    count1: 0
-    rate1: 0
+  - enemy1: {fileID: 1335854094805866, guid: 1c670e3c9007e044e9795df610415017, type: 2}
+    count1: 12
+    rate1: 1
+    enemy2: {fileID: 0}
+    count2: 0
+    rate2: 0
+    enemy3: {fileID: 0}
+    count3: 0
+    rate3: 0
+    enemy4: {fileID: 0}
+    count4: 0
+    rate4: 0
+    enemy5: {fileID: 0}
+    count5: 0
+    rate5: 0
+  - enemy1: {fileID: 1335854094805866, guid: 8d1e8cdb519b0754393620b90c823257, type: 2}
+    count1: 7
+    rate1: 1
     enemy2: {fileID: 0}
     count2: 0
     rate2: 0

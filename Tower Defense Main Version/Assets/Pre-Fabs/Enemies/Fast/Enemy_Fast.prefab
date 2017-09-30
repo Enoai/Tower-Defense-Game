@@ -147,9 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53fa358d8d458dd4396a1239c3d5c410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  wavePointIndex: 0
-  enemy: {fileID: 0}
   waypoints: {fileID: 0}
 --- !u!114 &114097258705699852
 MonoBehaviour:
@@ -165,7 +162,7 @@ MonoBehaviour:
   startSpeed: 20
   speed: 10
   startHealth: 15
-  worth: 25
+  worth: 5
   deathEffect: {fileID: 1133125599646910, guid: 31e398e5649c3a1429d22242e9617aab,
     type: 2}
   healthBar: {fileID: 114924845432275394}
