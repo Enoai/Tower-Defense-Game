@@ -12,9 +12,13 @@ This is the first level to the game, you can see the player lives,money gained, 
 
 There is currently 5 turrets in the game, all of which are very differnt and have their own abilties.
 Turret #1 - Generic Turret - Shoots every "X" seconds and deals moderate damage and can only hurt grounded turrets. - Comes with 1 upgrade that increases range and damage.
+
 Turret #2 - Anti-Air Turret - Shoots every "X" seconds and deals moderate damage to air targets only. - Comes with 1 upgrade that increases range and damage and allows the damage it does to splash and hit nearby enemies.
+
 Turret #3 - Laser Turret - Shoots contiunsly over time and slows the target it is shooting at - Comes with 1 upgrade that increases range and damage but also the slow.
+
 Turret #4 - AOE Turret - Shoots every "X" seconds around the turret - Comes with 1 upgrade that increases fire rate and damage.
+
 Turret #5 - Money Turret - Does not shoot or move but gives the moeny gained per 5 seconds a upgrade, allowing more money to be gained . - Comes with 1 upgrade that increases the money gain per 5 seconds.
 ![ScreenShot](https://i.gyazo.com/ef25c3f125a7a00d2c72b93d3a6f8440.png)
 
