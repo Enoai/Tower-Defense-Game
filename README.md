@@ -1,4 +1,25 @@
 # Tower-Defense-Game
+
+Current Features:
+1. Range Indicators on Turrets
+2. Main Menu / Pause Menu 
+3. Level Select
+4. 5 Turrets
+5. Turrts for specific enemies (Flying - Anti Air)
+6. Unlimted enemies
+7. Enemy Types - Flying - Grounded
+8. Multiple Waypoints (pathways)
+9. Multi Spawnpoints (randomly chosen, makes the game more random)
+
+
+ToDo Features:
+1. When Randomly Chosen spawnpoint is chosen, give a specfic pathway based upon it.
+2. More Turrets (I.e ones that can only be placed on WATER etc.)
+3. More Enemy Varians - Hard - Metal - Water .... ETC.
+4. Make it Multiplayer?
+5. Settings Menu?
+6. Incorparate Sounds?
+
 This is the main menu, this is the first scene that you come across when you start the game, it is quite straight forward and shows the game being played by itself in the background!
 ![ScreenShot](https://i.gyazo.com/5654955b4f04370ad34cf5ec7aa0a4ba.png)
 
