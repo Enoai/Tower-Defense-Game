@@ -32,7 +32,7 @@ The first menu is the PAUSE MENU, this is shown when the player presses escape o
 ![ScreenShot](https://i.gyazo.com/a2c024666490710e090a45d52f19fecd.png)
 
 The Second menu is the WIN level, this is shown when the player wins the level, it counts up the amount of rounds survived then allows the player to quit the level or play on to the next level.
-![ScreenShot](https://i.gyazo.com/a2c024666490710e090a45d52f19fecd.png)
+![ScreenShot](https://i.gyazo.com/d915bd59c9c66625b8ba20a0c6e1117f.png)
 
 The Final Menu (this far) is the game over menu, it appears after the player dies and counts up the rounds survived so far, but also allows them to click retry and redo the level or just go back to the main menu.
-![ScreenShot](https://i.gyazo.com/a2c024666490710e090a45d52f19fecd.png)
+![ScreenShot](https://i.gyazo.com/accb7108102616985ebe9a111e3cc423.png)
