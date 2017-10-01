@@ -10,6 +10,8 @@ Current Features:
 7. Enemy Types - Flying - Grounded
 8. Multiple Waypoints (pathways)
 9. Multi Spawnpoints (randomly chosen, makes the game more random)
+10. passively gain money ever 5 seconds.
+11. Level locking, gated behind if you've completed a certain level or not.
 
 
 ToDo Features:
