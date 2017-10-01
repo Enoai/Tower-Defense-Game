@@ -4,7 +4,7 @@ Current Features:
 1. Range Indicators on Turrets
 2. Main Menu / Pause Menu 
 3. Level Select
-4. 5 Turrets
+4. 5 Turrets (aoe,single,anti-air,money,laser(slow)
 5. Turrts for specific enemies (Flying - Anti Air)
 6. Unlimted enemies
 7. Enemy Types - Flying - Grounded
