@@ -13,10 +13,13 @@ EditorBuildSettings:
     guid: 389eb31892c581542807f01aef62d0d4
   - enabled: 1
     path: Assets/Worlds/Level01.unity
-    guid: a11ecc18ff437164dabebbcc4897030d
+    guid: e3a19f6c5315e4c429a6fd4f493a4ed4
   - enabled: 1
     path: Assets/Worlds/Level02.unity
-    guid: cb1243f0002f5ae45846b095801c65b6
+    guid: 33ea852fcf3f36e428f0c6bf25a0a3ba
   - enabled: 1
     path: Assets/Worlds/Level03.unity
-    guid: 00000000000000000000000000000000
+    guid: 8175af56c4fcd574693aa189657c68eb
+  - enabled: 1
+    path: Assets/Worlds/Level04.unity
+    guid: 68267fb5156046044be9dd942933be6f
