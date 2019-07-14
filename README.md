@@ -33,7 +33,7 @@ This is the first level to the game, you can see the player lives,money gained, 
 ![ScreenShot](https://i.gyazo.com/a59c0809efbc419c9331ba46d3fe3ec7.png)
 ![ScreenShot](https://i.gyazo.com/1927a1f26ef0c4ba6fb65b72748d8a71.png)
 
-There is currently 5 turrets in the game, all of which are very differnt and have their own abilties.
+There is currently 5 turrets in the game, all of which are very differnt and have their own abilities.
 
 Turret #1 - Generic Turret - Shoots every "X" seconds and deals moderate damage and can only hurt grounded turrets. - Comes with 1 upgrade that increases range and damage.
 
